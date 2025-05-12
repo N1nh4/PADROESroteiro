@@ -2,8 +2,7 @@ package roteiro2.parte2;
 
 public class PagamentoCredito extends Pagamento{
     private double valor;
-    private Gateway gateway;
-
+    
     public PagamentoCredito(double valor, Gateway gateway){
         super(valor, gateway);
     }
