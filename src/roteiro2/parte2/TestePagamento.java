@@ -5,7 +5,10 @@ public class TestePagamento {
         double valor = 1000;
         PagamentoCredito pagtoCredito = new PagamentoCredito(valor, gateway);
         pagtoCredito.realizarCobranca();
-        System.out.println("*****************************\n"); PagamentoDebito pagtoDebito = new PagamentoDebito(valor, gateway); pagtoDebito.realizarCobranca(); System.out.println("*****************************\n"); 
+        System.out.println("*****************************\n");
+        PagamentoDebito pagtoDebito = new PagamentoDebito(valor, gateway); 
+        pagtoDebito.realizarCobranca(); 
+        System.out.println("*****************************\n"); 
         
         PagamentoDinheiro pagtoDinheiro = new PagamentoDinheiro(valor, gateway); pagtoDinheiro.realizarCobranca();
     } 

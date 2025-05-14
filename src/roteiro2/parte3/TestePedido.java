@@ -8,16 +8,12 @@ public class TestePedido {
 
         System.out.println("Detalhes do Pedido Eletrônicos");
         PedidoEletronicos pedidoEletronicos = new PedidoEletronicos(1000.0, "Setor Eletrônicos", freteComun);
-        pedidoEletronicos.calculaFreteComun();
-        pedidoEletronicos.calculaFreteExpresso();
-        pedidoEletronicos.calculaFrete();
+        pedidoEletronicos.processarPedido();
         System.out.println("******************");
 
         System.out.println("Detalhes do Pedido Moveis");
         PedidoMoveis pedidoMoveis = new PedidoMoveis(2000.0, "Setor Moveis", freteExpresso);
-        pedidoMoveis.calculaFreteComun();
-        pedidoMoveis.calculaFreteExpresso();
-        pedidoMoveis.calculaFrete();
+        pedidoMoveis.processarPedido();
         System.out.println("******************");
 
     

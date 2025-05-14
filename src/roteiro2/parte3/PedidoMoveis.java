@@ -25,5 +25,10 @@ public class PedidoMoveis extends Pedido {
     public void calculaFreteExpresso() {
         System.out.println("Valor: " + super.getValor() + " Frete Expresso: " + (getValor() * 0.10));
     }
+
+    @Override
+    protected void validarPedido() {
+        System.out.println("Validando pedido de eletrônicos no setor: " + this.setor);
+    }
     
 }
