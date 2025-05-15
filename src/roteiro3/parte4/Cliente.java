@@ -30,5 +30,11 @@ public class Cliente implements Observer {
     public String getTipoObserver() {
         return "Cliente";
     }
+
+    // Metodo para alterar estrategia de notificacao
+    @Override
+    public void setNotificacaoStrategy(NotificacaoStrategy novaEstrategiaNotificacao) {
+        this.estrategiaNotificacao = novaEstrategiaNotificacao;
+    }
    
 }

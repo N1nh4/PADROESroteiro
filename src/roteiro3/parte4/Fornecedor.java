@@ -32,5 +32,10 @@ public class Fornecedor implements Observer {
     public String getTipoObserver() {
         return "Fornecedor";
     }
+
+    @Override
+    public void setNotificacaoStrategy(NotificacaoStrategy novaEstrategiaNotificacao) {
+        this.estrategiaNotificacao = novaEstrategiaNotificacao;
+    }
     
 }

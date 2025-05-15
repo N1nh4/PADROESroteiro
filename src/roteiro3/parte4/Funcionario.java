@@ -33,4 +33,8 @@ public class Funcionario implements Observer {
         return "Funcionario";
     }
     
+    @Override
+    public void setNotificacaoStrategy(NotificacaoStrategy novaEstrategiaNotificacao) {
+        this.estrategiaNotificacao = novaEstrategiaNotificacao;
+    }
 }

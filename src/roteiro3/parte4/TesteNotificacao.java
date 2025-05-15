@@ -28,5 +28,10 @@ public class TesteNotificacao {
 
         // Envia mensagem para todos os clientes
         newsletter.enviarMensagem("Oferta Especial !\n");
+
+        // Altera a estratégia de notificação do cliente1 para SMS
+        cliente1.setNotificacaoStrategy(sms);
+        // Envia mensagem para todos os clientes
+        newsletter.enviarMensagem("Promoção de Natal !\n");
     }
 }
