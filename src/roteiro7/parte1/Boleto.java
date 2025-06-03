@@ -10,7 +10,7 @@ public abstract class Boleto {
         this.valor = valor;
     }
 
-    public double calcJurus() {
+    public double calcJuros() {
         return this.valor * this.juros;
     }
 

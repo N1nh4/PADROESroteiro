@@ -24,7 +24,7 @@ public class BancoCaixa {
 
         System.out.println("*********************");
         System.out.println("Boleto gerado com sucesso. Valor = " + valor);
-        System.out.println("Valor Juros = " + boleto.calcJurus());
+        System.out.println("Valor Juros = " + boleto.calcJuros());
         System.out.println("Valor Desconto = " + boleto.calcDesconto());
         System.out.println("Valor Multa = " + boleto.calcMulta());
         System.out.println("*********************");
