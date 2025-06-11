@@ -8,10 +8,12 @@ public class SistemaEstoqueAdapterSAP implements ISistemaEstoqueAdapter {
         this.sistemaEstoque = new SistemaEstoque("SAP");
     }
     
+    @Override
     public void aumentarQuantidadeItem() {
         sistemaEstoque.adicionarItemEstoque();
     }
     
+    @Override
     public void diminuirQuantidadeItem() {
         sistemaEstoque.removerItemEstoque();
     }
